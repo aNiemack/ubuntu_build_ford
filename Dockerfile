@@ -8,8 +8,3 @@ RUN apt-get update && apt-get -y upgrade && \
                        findutils \
                        gfortran && \
                        pip install ford
-
-RUN groupadd -g 999 appuser && \
-    useradd -r -u 999 -g appuser appuser
-
-USER appuser
